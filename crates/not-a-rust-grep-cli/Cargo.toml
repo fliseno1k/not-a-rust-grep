@@ -8,5 +8,10 @@ edition = "2021"
 name = "not-a-rust-grep-cli"
 path = "src/main.rs"
 
+[lib]
+crate-type = ["rlib"]
+path       = "src/lib.rs"
+
 [dependencies]
-clap = { version = "4.5.10", features = ["derive"] }
+anyhow = { version = "1.0.86" }
+clap   = { version = "4.5.10", features = ["derive"] }

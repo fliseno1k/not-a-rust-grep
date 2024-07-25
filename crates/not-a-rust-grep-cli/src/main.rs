@@ -1,9 +1,5 @@
-mod arguments;
+// Test purpose only
 
-use arguments::Arguments;
-use clap::Parser;
-
-fn main() {
-    let args = Arguments::parse();
-    println!("{:?}", args);
+fn main() -> anyhow::Result<()> {
+    not_a_rust_grep_cli::run()
 }
